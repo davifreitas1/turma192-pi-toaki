@@ -1,0 +1,23 @@
+body{
+    background-color: #fff6e9;
+}
+
+.resolucao-pagina {
+    width: 100%;
+}
+
+.navbar-desktop-imagem {
+    margin-left: 10px;
+}
+
+.logo{
+    width: 122px;
+    height: 74px;
+
+}
+
+.navbar-container {
+    padding-left: 120px;
+    padding-bottom: 27px;
+    padding-top: 27px;
+}
