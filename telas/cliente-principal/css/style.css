@@ -3,7 +3,7 @@
 }
 .navbar-desktop{
     padding: var(--espacamento-g) var(--espacamento-m);
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: var(--cor-branco-translucido);
     opacity: 0.9;
 }
