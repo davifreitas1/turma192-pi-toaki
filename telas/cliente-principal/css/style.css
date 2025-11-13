@@ -24,3 +24,27 @@
 .icone-tamanho-g .icone-menu .icone-borda-preta{
   color: var(--cor-marca-primaria);
 }
+
+.iconkm-container{
+  display: flex;
+  justify-content: space-evenly;
+  padding: var(--espacamento-m);
+}
+
+.iconkm-container button{
+  width: 200px;
+  height: 23px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background: none;
+}
+
+.button-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor-branco-translucido);
+  padding:  2px;
+  border-radius: 4px;
+}
