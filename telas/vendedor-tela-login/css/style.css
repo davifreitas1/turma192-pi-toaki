@@ -23,7 +23,9 @@ body {
   border-radius: 30px;
   margin-top: 5%;
   margin-bottom: 5%;
-}
+} 
+
+
 
 h2 {
   text-align: center;
@@ -84,4 +86,8 @@ a {
   margin-bottom: 36px;
   text-align: center;
 
+}
+
+.navbar-tamanho {
+  width: 100%;
 }
