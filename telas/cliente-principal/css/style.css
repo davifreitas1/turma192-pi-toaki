@@ -40,7 +40,23 @@
   align-items: center;
   background-color: var(--cor-branco-translucido);
   padding:  2px;
-  margin-bottom: 10px ;
-  border-radius: 4px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.centralizar{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: var(--espacamento-m);
+  margin-top: 140px;
+}
+
+.centralizar button{
+  width: 50px;
+  height: 50px;
+  border:none;
+  cursor: pointer;
+  background: var(--cor-branco-translucido);
   border-radius: 50%;
 }
