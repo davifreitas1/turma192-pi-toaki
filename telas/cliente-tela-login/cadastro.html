@@ -13,11 +13,11 @@
   <link rel="stylesheet" href="../../toaki-componentes-css/css/icones.css">
   <link rel="stylesheet" href="../../toaki-componentes-css/css/inputs.css">
   <link rel="stylesheet" href="../../toaki-componentes-css/css/navbar.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/cadastro.css">
   <link rel="stylesheet" href="./css/media.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tela de login</title>
+  <title>Cadastro</title>
 </head>
 
 <body>
@@ -40,23 +40,36 @@
     </nav>
  </div>
 
- <div class="containerLogin"> <form id="telaLogin" class="ativo"> <h2>Entrar</h2> <div class="rotulo-entrada"> 
+ <div class="containerLogin"> <form id="telaLogin" class="ativo"> 
+    <h2>Criar conta</h2>
+    
+    
+<div class="rotulo-entrada">
+<label class="rotulo-desktop" for="nomeUsuario">Nome</label>
+<input class="entrada-desktop" type="text" placeholder="Ex: Joao da Silva">
+</div>
+
+
+     <div class="rotulo-entrada"> 
   <label class="rotulo-desktop" for="email">E-mail</label> <input class="entrada-desktop" type="text" id="email" placeholder="Ex: joaosilva@exemplo.com.br"> 
 </div> 
   <div class="rotulo-entrada"> <label class="rotulo-desktop" for="senha">Senha</label> 
     <input class="entrada-desktop" type="password" id="senha" placeholder="Ex: MinhaSenhaForte123!">
-   </div> 
+   </div>
+    <div class="rotulo-entrada"> <label class="rotulo-desktop" for="senha">Confirmar a senha</label> 
+    <input class="entrada-desktop" type="password" id="senha" placeholder="Ex: MinhaSenhaForte123!">
+   </div>
+
+ 
   <div class="checkbox"> <div class="lembrar"> <input type="checkbox" id="remember" name="remember">
      <label for="remember">Lembrar senha</label>
    </div> 
-   <a href="#" class="link-esqueci">Esqueci minha senha</a> 
+   
   </div> 
    <div class="botaoCentral">
-     <button class="botao-grande botao-geral-ciano" type="submit">Entrar</button>
+     <button class="botao-grande botao-geral-ciano" type="submit">Resgistrar</button>
    </div> 
-   <div class="entrar-convidado">
-     <a href="#">Entrar como Convidado</a> 
-    </div>
+   
      <div class="labelDesign"> <div class="linhaDesign">
      </div>
       <div class="label-textoDesign">Entrar com
@@ -70,11 +83,6 @@
           </button> <button type="button" class="btn-social btn-facebook"> <img src="" alt="Login com Facebook"> 
           </button> <button type="button" class="btn-social btn-twitter"> <img src="" alt="Login com Twitter"> </button>
          </div>
-   <div class="cadastroVendedor">
-     <p>Não tem conta?
-       <a href="#">Cadastre-se</a>
-      </p>
-       </div>
        </form> 
       </div>
 

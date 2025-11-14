@@ -1,0 +1,14 @@
+@media (max-width: 500px) {
+    .header {
+        padding: 15px 20px;
+    }
+
+    .login-card {
+        padding: 30px 20px;
+        margin: 0 10px;
+    }
+
+    .card-title {
+        font-size: 26px;
+    }
+}
