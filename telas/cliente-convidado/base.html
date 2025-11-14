@@ -14,11 +14,63 @@
   <link rel="stylesheet" href="./css/style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Insira o nome da tela aqui</title>
+  <title>Tela Client e Convidado</title>
 </head>
+
 <body>
 
+  <header class="cabeçalho">
+    <div class="logo">
+      <img src="" alt="Logo"> <!-- Adicionar LOGO depois -->
+    </div>
 
+    <div class="icone-usuario">
+      <img src="" alt="Ícone do usuário"> <!-- Adicionar ÍCONE depois -->
+    </div>
+  </header>
+
+  <!-- Main do site -->
+  <main class="main-site">
+
+    <button class="botao-voltar">Voltar</button>
+
+    <section class="card">
+
+      <h1>Entrar como Convidado</h1>
+
+      <form class="form-convidado">
+
+        <div class="entrada-dados">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" placeholder="Digite seu nome completo">
+        </div>
+
+        <div class="entrada-dados">
+          <label for="celular">Celular</label>
+          <input type="tel" id="celular" placeholder="Ex: (81) 40028922">
+        </div>
+
+        <button type="submit" class="botao-registrar">Registrar</button>
+      </form>
+
+      <div class="divider">Entrar com</div>
+
+      <div class="icones-redessocias">
+      <!-- Buscar no framework depois-->
+        <img src="" alt="Login com Google">
+        <img src="" alt="Login com Facebook">
+        <img src="" alt="Login com Apple">
+      </div>
+
+      <p class="rodapé">
+      <!--Inserir Link para Página de cadastro depois -->
+        Não tem conta?
+        <a href="#" class="link-cadastro">Cadastre-se</a>
+      </p>
+
+    </section>
+
+  </main>
 
   <script src="./script/script.js"></script>
 </body>
