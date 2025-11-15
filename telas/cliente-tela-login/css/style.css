@@ -95,7 +95,19 @@ a {
   flex-grow: 1;
 }
 
-.social-login {}
+.social-login {
+    display: flex;
+    justify-content: center;    
+}
+
+.social-login button{
+    border: none;
+}
+
+.social-login img{
+    margin: 4px;
+    width: 36px;
+}
 
 .cadastroVendedor {
   margin-top: 15px;
