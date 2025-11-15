@@ -1,0 +1,187 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden; 
+}
+
+.resolucao-web.container-tela {
+    display: flex; 
+    width: 100vw; 
+    height: 100vh; 
+}
+
+
+.navbar-desktop {
+    position: absolute; 
+    top: var(--espacamento-g); 
+    left: var(--espacamento-g);
+    right: var(--espacamento-g);
+    width: auto; 
+    z-index: 10; 
+    border-radius: var(--raio-grande); 
+    box-shadow: var(--sombra-media);
+    background-color: var(--cor-branco-translucido); 
+}
+
+.container-chat {
+    width: 100%;
+    height: auto; 
+    z-index: 5; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 150px; 
+    padding: 0 var(--espacamento-g); 
+}
+
+.chat {
+    display: flex; 
+    height: 80vh; 
+    width: 94%; 
+    max-width: none; 
+    background-color: var(--cor-branco-translucido); 
+    border-radius: var(--raio-login); 
+    box-shadow: var(--sombra-media);
+    overflow: hidden; 
+}
+
+.esquerda {
+    flex-basis: 320px; 
+    flex-shrink: 0; 
+    border-right: 1px solid var(--cor-borda-neutra); 
+    display: flex;
+    flex-direction: column; 
+    padding: var(--espacamento-g); 
+    box-sizing: border-box;
+}
+
+.esquerda h2 {
+    font-size: 22px;
+    font-weight: var(--font-SemiBold); 
+    margin-top: 0;
+    margin-bottom: var(--espacamento-g); 
+    color: var(--cor-texto-primaria);
+}
+
+.lista-contatos {
+    flex-grow: 1; 
+    overflow-y: auto; 
+    scrollbar-width: thin;
+    scrollbar-color: #ccc var(--cor-fundo-secundaria);
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    padding: var(--espacamento-regular); 
+    border-radius: var(--raio-grande); 
+    cursor: pointer;
+    margin-bottom: var(--espacamento-p); 
+}
+
+.contato:hover {
+    background-color: var(--cor-fundo-secundaria); 
+}
+
+.convo-details {
+    overflow: hidden; 
+}
+
+.convo-details h3.cliente-nome {
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: var(--font-SemiBold); 
+    margin: 0 0 var(--espacamento-pp) 0; 
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    color: var(--cor-texto-primaria);
+}
+
+.convo-details p {
+    font-size: 14px;
+    color: var(--cor-texto-secundaria); 
+    margin: 0;
+    padding-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.direita {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column; 
+    background-color: var(--cor-branco-translucido);
+}
+
+.chat-header-direita {
+    display: flex;
+    align-items: center;
+    padding: var(--espacamento-g); 
+    border-bottom: 1px solid var(--cor-borda-neutra);
+    flex-shrink: 0; 
+}
+
+.chat-header-direita .card-perfil {
+    margin-right: var(--espacamento-m); 
+}
+
+.chat-header-direita h3.cliente-nome {
+    font-size: 18px;
+    font-weight: var(--font-SemiBold); 
+    margin: 0;
+    color: var(--cor-texto-primaria);
+}
+
+.messages-area {
+    flex-grow: 1; 
+    padding: var(--espacamento-g); 
+    overflow-y: auto; 
+}
+
+.chat-footer {
+    display: flex;
+    align-items: center;
+    padding: var(--espacamento-g); 
+    border-top: 1px solid var(--cor-borda-neutra);
+    background-color: var(--cor-fundo-secundaria); 
+    flex-shrink: 0; 
+}
+
+.chat-footer input {
+    flex-grow: 1;
+    border: none;
+    background-color: var(--cor-borda-neutra); 
+    padding: 14px 20px; 
+    border-radius: var(--raio-login); 
+    font-size: 15px;
+    margin-right: var(--espacamento-m); 
+    outline: none;
+    color: var(--cor-texto-primaria);
+}
+
+.chat-footer input::placeholder {
+    color: var(--cor-texto-secundaria);
+}
+
+.chat-footer .send-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    color: var(--cor-texto-secundaria);
+    line-height: 1;
+    transition: color 0.2s;
+}
+
+.chat-footer .send-btn:hover {
+    color: var(--cor-marca-secundaria); 
+}
+
+.chat-footer .send-btn svg {
+    width: var(--espacamento-g); 
+    height: var(--espacamento-g); 
+}
+
