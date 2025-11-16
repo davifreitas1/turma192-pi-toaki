@@ -1,0 +1,24 @@
+.resolucao {
+    height: 100vh;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: var(--espacamento-gg);
+    padding: var(--espacamento-p);
+    justify-content: space-between;
+    
+}
+
+.painel {
+    background-color: var(--cor-fundo-secundaria);
+    display: flex;
+    width: 1263px;
+    height: 696px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 16px;
+    border-radius: 20px;
+}
