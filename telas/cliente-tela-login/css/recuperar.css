@@ -23,6 +23,11 @@ body{
     padding-right: 100px;
 }
 
+.botaoVoltar{
+    padding-left: 25px;
+    padding-top: 45px;
+}
+
 .containerLogin{
   display: flex;
   align-items: center;
@@ -30,7 +35,7 @@ body{
   width: 100%;
   max-width: 37%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 50px;
   box-shadow: 0 0 10px rgba(10, 8, 8, 0.1);
   border-radius: 8px;
   background-color: var(--cor-branco-translucido);
@@ -41,26 +46,25 @@ body{
 
 h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   font-size: 36px;
   color: rgba(0, 0, 0, 0.73);
   font-weight: 600;
 } 
 
+.descricao-centralizada{
+    padding-top: 20px;
+    color: rgba(0, 0, 0, 0.824);
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 14x;
+    line-height: 1.5;
+}
+
 .rotulo-entrada {
   display: flex;
   padding-top: 20px;
   padding-bottom: 10px;
-}
-
-.checkbox {
-  display: flex;
-  align-items: center;
-  gap: 100px;
-}
-
-a {
-  text-decoration: none;
 }
 
 .botaoCentral {
@@ -69,41 +73,3 @@ a {
   margin-top: 20px;
 }
 
-.entrar-convidado {
-  margin-top: 10px;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-.labelDesign {
-  padding: var(--espacamento-p);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-self: center;
-  gap: var(--espacamento-regular);
-}
-
-.label-textoDesign {
-  text-align: center;
-  text-wrap: nowerap;
-  flex-grow: 0.1;
-}
-
-.linhaDesign {
-  border-top: 1px solid var(--cor-borda-neutra);
-  flex-grow: 1;
-}
-
-.social-login{
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.cadastroVendedor {
-  margin-top: 15px;
-  margin-bottom: 36px;
-  text-align: center;
-
-}
