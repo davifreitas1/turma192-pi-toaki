@@ -15,7 +15,94 @@
   <link rel="stylesheet" href="../../toaki-componentes-css/css/inputs.css">
   <link rel="stylesheet" href="../../toaki-componentes-css/css/navbar.css">
   <link rel="stylesheet" href="../css/style.css">
+  <style>
+    :root {
+  --raio-login: 30px;
+  --titulo-criar-conta: 48px "Montserrat", sans-serif #000000ba;
+  --font-Regular: 400;
+  --font-Medium: 500;
+  --font-SemiBold: 600;  
+  }
   
+  .containerCriarConta {
+  width: 100%;
+  max-width: 600px;              /* largura semelhante ao padrão do login */
+  margin: 5% auto;             /* centraliza vertical e horizontal */
+  padding: 24px;               /* respiro interno */
+  background: var(--cor-branco-translucido);
+  border-radius: 30px;         /* igual ao seu padrão */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.10);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;                   /* espaço interno entre os elementos */
+}
+
+.containerCriarConta h2{
+  text-align: center;
+  font-size: 48px;
+  color: #000000ba;
+  font-family: "Montserrat", sans-serif;
+}
+
+.containerCriarConta form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #000000ba;
+}
+
+.containerCriarConta .botaoCentralizado {
+  text-align: center;
+}
+
+.labelDesign {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  width: 100%;
+}
+
+.linhaDesign {
+  flex: 1;                           
+  height: 1px;
+  background-color: var(--cor-borda-neutra);
+}
+
+.label-textoDesign {
+  white-space: nowrap;               
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 500;
+}
+
+
+
+@media (max-width: 1024px) {
+  .containerCriarConta {
+    max-width: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  .containerCriarConta {
+    max-width: 80%;
+    padding: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .containerCriarConta {
+    max-width: 92%;
+    padding: 15px;
+  }
+}
+
+
+
+
+
+  </style>
  
 </head>
 
@@ -44,7 +131,7 @@
 </div>
 
 <div class="containerCriarConta">
-  <form id="telaCriarConta" class="ativo">
+  <form id="telaCriarConta">
     <h2>Criar Conta</h2>
 
     <div class="rotulo-entrada">
@@ -68,7 +155,7 @@
     </div>
 
     
-    <div class="botaoCentral">
+    <div class="botaoCentralizado">
         <button class="botao-grande botao-geral-ciano" type="submit">Registrar</button>
     </div>
   
