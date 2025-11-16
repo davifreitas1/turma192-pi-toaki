@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Componentes HTML & CSS</title>
+  <title>Criar Conta</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="../../toaki-componentes-css/css/icones.css">
   <link rel="stylesheet" href="../../toaki-componentes-css/css/inputs.css">
   <link rel="stylesheet" href="../../toaki-componentes-css/css/navbar.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
   
  
 </head>
@@ -34,21 +34,23 @@
 <svg class="icone-tamanho-g icone-usuario icone-borda-preta" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path stroke-linecap="round" stroke-linejoin="round"></path>
 </svg>
-<svg class="icone-tamanho-g icone-retorno icone-borda-preta" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path stroke-linecap="round" stroke-linejoin="round"></path>
-</svg>
-<svg class="icone-tamanho-g icone-retorno icone-borda-preta" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path stroke-linecap="round" stroke-linejoin="round"></path>
-</svg>
 </div>
 
 </nav>
 </div>
 
+<div>
+  <button class="botao-ciano-pequeno botao-geral-ciano">Voltar</button>
+</div>
 
-<div class="containerLogin">
-  <form id="telaLogin" class="ativo">
-    <h2>Entrar</h2>
+<div class="containerCriarConta">
+  <form id="telaCriarConta" class="ativo">
+    <h2>Criar Conta</h2>
+
+    <div class="rotulo-entrada">
+      <label class="rotulo-desktop" for="nome">Nome</label>
+      <input class="entrada-desktop" type="text" id="nome" placeholder="Ex: João da Silva">
+    </div>
 
     <div class="rotulo-entrada">
       <label class="rotulo-desktop" for="email">E-mail</label>
@@ -60,16 +62,14 @@
       <input class="entrada-desktop" type="password" id="senha" placeholder="Ex: MinhaSenhaForte123!">
     </div>
 
-    <div class="checkbox">
-      <div class="lembrar">
-        <input type="checkbox" id="remember" name="remember">
-        <label for="remember">Lembrar senha</label>
-      </div>
-      <a href="#" class="link-esqueci">Esqueci minha senha</a>
+    <div class="rotulo-entrada">
+      <label class="rotulo-desktop" for="senha">Senha</label>
+      <input class="entrada-desktop" type="password" id="senha" placeholder="Ex: MinhaSenhaForte123!">
     </div>
 
+    
     <div class="botaoCentral">
-        <button class="botao-grande botao-geral-ciano" type="submit">Entrar</button>
+        <button class="botao-grande botao-geral-ciano" type="submit">Registrar</button>
     </div>
   
 
@@ -90,12 +90,8 @@
       </button>
 
       <button type="button" class="btn-social btn-twitter">
-        <img src="" alt="Login com Twitter">
+        <img src="" alt="Login com X">
       </button>
-    </div>
-
-    <div class="cadastroVendedor">
-      <p>Não tem conta? <a href="#">Cadastre-se</a></p>
     </div>
   </form>
 </div>

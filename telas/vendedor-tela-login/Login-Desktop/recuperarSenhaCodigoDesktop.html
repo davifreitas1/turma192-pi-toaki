@@ -44,32 +44,25 @@
 
 </nav>
 </div>
-
+ 
 
 <div class="containerLogin">
   <form id="telaLogin" class="ativo">
-    <h2>Entrar</h2>
+    <h2>Recuperar Senha</h2>
 
-    <div class="rotulo-entrada">
-      <label class="rotulo-desktop" for="email">E-mail</label>
-      <input class="entrada-desktop" type="text" id="email" placeholder="Ex: joaosilva@exemplo.com.br">
-    </div>
-
-    <div class="rotulo-entrada">
-      <label class="rotulo-desktop" for="senha">Senha</label>
-      <input class="entrada-desktop" type="password" id="senha" placeholder="Ex: MinhaSenhaForte123!">
-    </div>
-
-    <div class="checkbox">
-      <div class="lembrar">
-        <input type="checkbox" id="remember" name="remember">
-        <label for="remember">Lembrar senha</label>
-      </div>
-      <a href="#" class="link-esqueci">Esqueci minha senha</a>
-    </div>
+    <h3>Digite o código de confirmação</h3>
+    <!--Essa div vai agrupas todos os inputs para a digitação do codígo recebido no email-->
+    <div class="campo-inputs">
+    <!--Esses 5 inputs com maxlenght = 1, vai ser responsável por garantir que seja digitado 1 caracter por campo-->  
+      <input type="text" maxlength="1" class="campo-input">
+      <input type="text" maxlength="1" class="campo-input">
+      <input type="text" maxlength="1" class="campo-input">
+      <input type="text" maxlength="1" class="campo-input">
+      <input type="text" maxlength="1" class="campo-input">
+    </div>    
 
     <div class="botaoCentral">
-        <button class="botao-grande botao-geral-ciano" type="submit">Entrar</button>
+        <button class="botao-grande botao-geral-ciano" type="submit">Confirmar</button>
     </div>
   
 
@@ -77,25 +70,6 @@
       <div class="linhaDesign"></div>
       <div class="label-textoDesign">Entrar com</div>
       <div class="linhaDesign"></div>
-    </div>
-
-    <!-- Login social -->
-    <div class="social-login">
-      <button type="button" class="btn-social btn-google">
-        <img src="" alt="Login com Google">
-      </button>
-
-      <button type="button" class="btn-social btn-facebook">
-        <img src="" alt="Login com Facebook">
-      </button>
-
-      <button type="button" class="btn-social btn-twitter">
-        <img src="" alt="Login com Twitter">
-      </button>
-    </div>
-
-    <div class="cadastroVendedor">
-      <p>Não tem conta? <a href="#">Cadastre-se</a></p>
     </div>
   </form>
 </div>
