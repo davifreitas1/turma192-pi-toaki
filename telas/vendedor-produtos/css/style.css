@@ -77,7 +77,7 @@
 }
 
 .pesquisa-acoes{
-  padding: var(--espacamento-regular);
+  padding: 30px;
   width: 1008px;
 
 }
@@ -91,19 +91,79 @@
 .container-produtos{
   display: flex;
   width: 1008px;
-  padding: 12px;
-  gap: 16px
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 12px;
+  gap: 16px;
+  
 
 }
 
 .item{
+  
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 329px;
   height: 240px;
   background-color: var(--cor-fundo-secundaria);
   border-radius: var(--raio-extra-grande);
-  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: var(--sombra-grande);
+  border: 2px solid #d9d9d9;
   
+}
+
+.image{
+  margin-top: 20px;
+  display: flex;
+  width: 211px;
+  height: 117px;
+  background-color: var(--cor-fundo-secundaria);
+  border-radius: var(--raio-extra-grande);
+  border: 2px solid #d9d9d9;
+}
+
+.nome-produto{
+  padding-top: 15px;
+  margin-bottom: 30px;
+}
+
+.disponivel{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.disponibilidade-text{
+  line-height: 24px;
+  height: 24px;
+  padding: 2px 5px;
+  font-size: var(--font-Regular);
+
+}
+
+.quantity-input{
+  width: 35px;
+  height: 24px;
+  padding: 2px ;
+  border: 1px solid #ccc;
+}
+
+.diponibilidade-row {
+    width: 100%; 
+    padding-bottom: 5px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.input-count{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-bottom: 5px;
 }
 
 .painel-mobile {
