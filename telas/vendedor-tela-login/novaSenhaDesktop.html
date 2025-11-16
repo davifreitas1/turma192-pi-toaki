@@ -15,6 +15,79 @@
   <link rel="stylesheet" href="../../toaki-componentes-css/css/inputs.css">
   <link rel="stylesheet" href="../../toaki-componentes-css/css/navbar.css">
   <link rel="stylesheet" href="./css/style.css">
+
+  <style>
+    :root {
+  --raio-login: 30px;
+  --titulo-criar-conta: 48px "Montserrat", sans-serif #000000ba;
+  --font-Regular: 400;
+  --font-Medium: 500;
+  --font-SemiBold: 600;  
+  }
+
+  .voltarPadding {
+    padding: 20px;
+  }
+  
+  .containerNovaSenha {
+  width: 100%;
+  max-width: 600px;              /* largura semelhante ao padrão do login */
+  margin: 5% auto;             /* centraliza vertical e horizontal */
+  padding: 24px;               /* respiro interno */
+  background: var(--cor-branco-translucido);
+  border-radius: 30px;         /* igual ao seu padrão */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.10);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;                   /* espaço interno entre os elementos */
+  }
+
+  .containerNovaSenha h2{
+    text-align: center;
+    font-size: 48px;
+    color: #000000ba;
+    font-family: "Montserrat", sans-serif;
+    font-weight: var(--font-SemiBold)
+  }
+
+  .containerNovaSenha form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: #000000ba;
+  }
+
+  .containerNovaSenha .botaoCentralizado {
+    text-align: center;
+  }
+
+  @media (max-width: 1024px) {
+    .containerCriarConta {
+      max-width: 55%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .containerCriarConta {
+      max-width: 80%;
+      padding: 18px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .containerCriarConta {
+      max-width: 92%;
+      padding: 15px;
+    }
+  }
+
+
+
+
+
+  </style>
   
  
 </head>
@@ -38,11 +111,11 @@
 </nav>
 </div>
 
-<div>
+<div class="voltarPadding">
   <button class="botao-ciano-pequeno botao-geral-ciano">Voltar</button>
 </div>
 
-<div class="containerLogin">
+<div class="containerNovaSenha">
   <form id="telaLogin" class="ativo">
     <h2>Nova Senha</h2>
 
