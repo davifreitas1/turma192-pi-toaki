@@ -1,0 +1,263 @@
+.topo {
+    display: flex;
+    align-items: center;
+    padding: 20px 22px 0px;
+}
+
+.titulo {
+    padding: 10px;
+}
+
+.entrada-container{
+    width: 100%;
+}
+
+.buscar {
+    padding: 10px 12px;
+}
+
+.linha-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+}
+
+.ordenar-container {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+}
+
+.ordenar-texto {
+    font-size: 10px;
+    color: #333;
+    white-space: nowrap;
+    padding-left: 5px;
+}
+
+.ordenar-select {
+    background: transparent;
+    border: none;
+    font-size: 10px;
+    color: #333;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2px;
+}
+
+.botao-ciano-medio {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    height: 50%;
+    width: 100%;
+}
+
+.icone-mais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone-tamanho-g {
+    width: 22px;
+    height: 22px;
+}
+
+.botao-ciano-medio {
+    flex-direction: row; 
+    justify-content: center; 
+}
+
+.principal {
+    display: flex;
+    padding: 10px 12px;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.caixa-produto {
+    display: flex;
+    width: 276px;
+    height: 142px;
+    border: 1px solid #d0d0d0;
+    border-radius: 12px;
+    flex-direction: column;
+    padding: 10px 5px;
+    gap: 8px;
+}
+
+.informações {
+    display: flex;
+    justify-content: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.descrição-produto h5 {
+    font-size: 14px;
+    font-weight: 550;
+}
+
+.descrição-produto p {
+    font-size: 10px;
+}
+
+.descrição-produto p1 {
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.disponibilidade {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.disponibilidade p {
+    font-size: 10px;
+}
+
+.imagem-produto {
+    width: 52px;
+    height: 49px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    flex-shrink: 0;
+    border: 1px solid #757575; 
+}
+
+.sem-imagem {
+    color: #8f8f8f;
+    font-size: 10px;
+    font-style: italic;
+    align-items: center;
+    text-align: center;
+}
+
+.linha {
+    border: 0.2px solid #292929;
+    margin: 10px auto;
+    width: 95%;
+
+}
+
+.botões-prod {
+    display: flex;
+    justify-content: center;
+}
+
+.botao-vermelho-pequeno {
+    font-size: 16px;
+    height: 28px;
+    text-align: center;
+
+}
+
+.botao-ciano-pequeno {
+    font-size: 16px;
+    height: 28px;
+    text-align: center;
+}
+
+.oculto {
+  display: none !important;
+}
+
+
+#tela-adicionar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(5px); 
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-container {
+  background: white;
+  width: 85%;
+  max-width: 400px;
+  border-radius: 12px;
+  padding: 0;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+#tela-adicionar .topo {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin: 0;
+}
+
+.titulo {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.formulario-produto {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.campo-label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+
+.campo-input, .campo-textarea {
+  padding: 12px;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.campo-input::placeholder, .campo-textarea::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+.campo-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.botao-produto-conf {
+    display: flex;
+    text-align: center;
+}
+
+.botao-voltar {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}

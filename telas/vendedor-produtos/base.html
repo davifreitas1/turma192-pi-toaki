@@ -11,15 +11,165 @@
   <link rel="stylesheet" href="../../toaki-componentes-css/css/icones.css">
   <link rel="stylesheet" href="../../toaki-componentes-css/css/inputs.css">
   <link rel="stylesheet" href="../../toaki-componentes-css/css/navbar.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="../vendedor-produtos/css/style.css">
+  <link rel="stylesheet" href="./css/imagem.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Insira o nome da tela aqui</title>
+  <title>Meus Produtos Mobile</title>
 </head>
 <body>
 
+<div class="topo">
+  <svg class="icone-tamanho-g icone-retorno icone-borda-preta" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path stroke-linecap="round" stroke-linejoin="round"></path>
+  </svg>
+  <h2 class="titulo">Meus Produtos</h2>
+</div>
+
+<div class="buscar">
+  <div class="entrada-container">
+    <input type="text" placeholder="Buscar" class="texto-entrada-absoluto">
+    <svg class="icone-tamanho-m icone-lupa icone-borda-preta entrada-icone-absoluto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+  </div>
+</div>
+
+<div class="linha-superior">
+  <div class="ordenar-container">
+    <span class="ordenar-texto">Ordenar por:</span>
+    <select class="ordenar-select">
+      <option value="nome">Nome</option>
+      <option value="preco">Preço</option>
+      <option value="data">Data</option>
+    </select>
+  </div>
+
+  <div class = "botão-adicionar">
+    <button class="botao-ciano-medio botao-geral-ciano">
+      <div class = mais>
+        <svg class="icone-tamanho-g icone-mais icone-borda-preta" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        </div>
+      Adicionar
+      </button>
+  </div>
+</div>
+
+<div class="principal">
+  <div class = "caixa-produto">
+    <div class = "informações">
+      <div class = "imagem-produto">
+        <span class= "sem-imagem">No Image</span>
+      </div>
+      <div class = "descrição-produto">
+        <h5>Nome do Produto</h5>
+        <p>descrição do produto: xxx</p>
+        <p1>valor do produto: R$ x,xx</p1>
+      </div>
+      <div class = "disponibilidade">
+        <p>Disponível: 10</p>
+        <div class="switch-externo switch-externo-ativo">
+        <div class="switch-bola"></div>
+        </div>
+
+      </div>
+    </div>
+    <hr class = "linha">
+    <div class = "botões-prod">
+      <button class="botao-vermelho-pequeno botao-geral-vermelho">Excluir</button>
+      <button class="botao-ciano-pequeno botao-geral-ciano">Editar</button>
+    </div>
+  </div>
 
 
-  <script src="./script/script.js"></script>
+    <div class = "caixa-produto">
+      <div class = "informações">
+        <div class = "imagem-produto">
+          <span class= "sem-imagem">No Image</span>
+        </div>
+        <div class = "descrição-produto">
+          <h5>Nome do Produto</h5>
+          <p>descrição do produto: xxx</p>
+          <p1>valor do produto: R$ x,xx</p1>
+        </div>
+        <div class = "disponibilidade">
+          <p>Disponível: 10</p>
+          <div class="switch-externo switch-externo-inativo">
+          <div class="switch-bola"></div>
+          </div>
+
+        </div>
+      </div>
+      <hr class = "linha">
+      <div class = "botões-prod">
+        <button class="botao-vermelho-pequeno botao-geral-vermelho">Excluir</button>
+        <button class="botao-ciano-pequeno botao-geral-ciano">Editar</button>
+      </div>
+    </div>
+
+
+    <div class = "caixa-produto">
+      <div class = "informações">
+        <div class = "imagem-produto">
+          <span class= "sem-imagem">No Image</span>
+        </div>
+        <div class = "descrição-produto">
+          <h5>Nome do Produto</h5>
+          <p>descrição do produto: xxx</p>
+          <p1>valor do produto: R$ x,xx</p1>
+        </div>
+        <div class = "disponibilidade">
+          <p>Disponível: 10</p>
+          <div class="switch-externo switch-externo-ativo">
+          <div class="switch-bola"></div>
+          </div>
+
+        </div>
+      </div>
+      <hr class = "linha">
+      <div class = "botões-prod">
+        <button class="botao-vermelho-pequeno botao-geral-vermelho">Excluir</button>
+        <button class="botao-ciano-pequeno botao-geral-ciano">Editar</button>
+      </div>
+    </div>
+</div>
+
+<div id="tela-adicionar" class="oculto">
+  <div class="popup-container">
+    <div class="topo">
+      <button id="btn-voltar" class="botao-voltar">
+        <svg class="icone-tamanho-g icone-retorno icone-borda-preta" viewBox="0 0 24 24" fill="none">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
+        </svg>
+      </button>
+      <p class="titulo">Adicionar produtos</p>
+    </div>
+
+    <div class="formulario-produto">
+      <div class="campo">
+        <label class="campo-label">Nome</label>
+        <input type="text" placeholder="Ex: água mineral" class="campo-input">
+      </div>
+      
+      <div class="campo">
+        <label class="campo-label">Descrição</label>
+        <textarea placeholder="Descrição do produto" class="campo-textarea"></textarea>
+      </div>
+      
+      <div class="campo">
+        <label class="campo-label">Adicionar Foto</label>
+        <input type="file" class="campo-input">
+      </div>
+      <div class = "botao-produto-conf"> 
+        <button class="botao-grande botao-geral-ciano">Adicionar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="/telas/vendedor-produtos/js/script.js"></script>
 </body>
 </html>
