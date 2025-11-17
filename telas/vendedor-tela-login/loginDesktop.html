@@ -24,6 +24,64 @@
     --font-Medium: 500;
     --font-SemiBold: 600;  
     }
+
+    .navbar-tamanho{
+  width: 1348px;
+}
+
+
+.navbar-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--espacamento-xg);
+  width: 100%;
+  padding-top: var(--espacamento-regular);
+  padding-bottom: var(--espacamento-regular);
+  background-color: var(--cor-fundo-secundaria);
+  box-shadow: var(--sombra-media);
+  border-radius: var(--raio-grande);
+}
+
+.navbar-3-icones {
+  gap: var(--espacamento-ggg);
+}
+
+.navbar-desktop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--espacamento-m);
+  background-color: var(--cor-fundo-secundaria);
+  box-shadow: var(--sombra-media);
+  border-radius: var(--raio-grande);
+}
+
+.navbar-desktop-imagem {
+  width: 60px;
+  height: 60px;
+}
+
+.navbar-desktop-imagem img {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-desktop-secao-vazia {
+  flex-grow: 1;
+}
+
+.navbar-desktop-icones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--espacamento-gg);
+}
+
+.icone-tamanho-g {
+  width: 32px;
+  height: 32px;
+}
   
   .containerLogin {
   width: 100%;
@@ -78,6 +136,29 @@
   font-weight: 500;
 }
 
+.social-login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--espacamento-gg)
+}
+
+.social-login button{
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  width: 57px;
+  height: 57px;
+  padding: 0;
+}
+
+.social-login img{
+  width: 57px;
+  height: 57px;
+  object-fit: contain;
+}
+
 
 
 @media (max-width: 1024px) {
@@ -123,12 +204,6 @@
 <svg class="icone-tamanho-g icone-usuario icone-borda-preta" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path stroke-linecap="round" stroke-linejoin="round"></path>
 </svg>
-<svg class="icone-tamanho-g icone-retorno icone-borda-preta" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path stroke-linecap="round" stroke-linejoin="round"></path>
-</svg>
-<svg class="icone-tamanho-g icone-retorno icone-borda-preta" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path stroke-linecap="round" stroke-linejoin="round"></path>
-</svg>
 </div>
 
 </nav>
@@ -171,15 +246,15 @@
     <!-- Login social -->
     <div class="social-login">
       <button type="button" class="btn-social btn-google">
-        <img src="" alt="Login com Google">
+        <img src="/telas/vendedor-tela-login/img/icons8-google-logo-96.svg" alt="Login com Google">
       </button>
 
       <button type="button" class="btn-social btn-facebook">
-        <img src="" alt="Login com Facebook">
+        <img src="/telas/vendedor-tela-login/img/icons8-facebook-novo-96.svg" alt="Login com Facebook">
       </button>
 
       <button type="button" class="btn-social btn-twitter">
-        <img src="" alt="Login com Twitter">
+        <img src="/telas/vendedor-tela-login/img/icon-X.svg " alt="Login com Twitter">
       </button>
     </div>
 
