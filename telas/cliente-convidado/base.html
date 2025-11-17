@@ -14,14 +14,14 @@
   <link rel="stylesheet" href="./css/style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tela Client e Convidado</title>
+  <title>Tela Client Convidado</title>
 </head>
 
 <body>
 
   <header class="cabeçalho">
     <div class="logo">
-      <img src="" alt="Logo"> <!-- Adicionar LOGO depois -->
+      <img src="/img/logo-to-aki.png" alt="Logo">
     </div>
 
     <div class="icone-usuario">
@@ -31,15 +31,20 @@
 
   <!-- Main do site -->
   <main class="main-site">
+    <div class="voltar-content">
+      <button class="botao-voltar">Voltar</button>
+    </div>
+    
+    <div class="logo-mobile">
+      <img src="https://logodownload.org/wp-content/uploads/2014/09/lol-league-of-Legends-logo.png" alt="">
+    </div>
 
-    <button class="botao-voltar">Voltar</button>
-
-    <section class="card">
+    <section class="card card-login">
 
       <h1>Entrar como Convidado</h1>
 
       <form class="form-convidado">
-
+      
         <div class="entrada-dados">
           <label for="nome">Nome</label>
           <input type="text" id="nome" placeholder="Digite seu nome completo">
@@ -47,22 +52,25 @@
 
         <div class="entrada-dados">
           <label for="celular">Celular</label>
-          <input type="tel" id="celular" placeholder="Ex: (81) 40028922">
+          <input type="tel" id="celular" placeholder="Ex: (81) 99999999">
         </div>
 
         <button type="submit" class="botao-registrar">Registrar</button>
       </form>
 
-      <div class="divider">Entrar com</div>
+      <div class="divider">
+        <div class="linha"></div>
+        <p>Entrar com</p>
+      </div>
 
       <div class="icones-redessocias">
       <!-- Buscar no framework depois-->
-        <img src="" alt="Login com Google">
-        <img src="" alt="Login com Facebook">
-        <img src="" alt="Login com Apple">
+        <img src="https://imagepng.org/wp-content/uploads/2019/08/google-icon.png" alt="Login com Google">
+        <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-5-1.png" alt="Login com Facebook">
+        <img src="https://cdn-icons-png.flaticon.com/512/0/747.png" alt="Login com Apple">
       </div>
 
-      <p class="rodapé">
+      <p class="rodape">
       <!--Inserir Link para Página de cadastro depois -->
         Não tem conta?
         <a href="#" class="link-cadastro">Cadastre-se</a>

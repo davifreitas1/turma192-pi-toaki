@@ -7,18 +7,202 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #fff; /* Buscar cores de acordo com manual da marca depois  */
+  background-color: #FFF6E9; 
   display: flex;
   justify-content: center;
-  padding: 30px;}
+  align-items: center;
+  flex-direction: column;
+  /* padding: 30px; */
+}
+
+.cabeçalho{
+  background-color: #F9F9F9;
+  display: flex;
+  justify-content: space-between; /* Um para cada lado */
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  padding: 10px 20px;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.cabeçalho .logo{
+  /* background-color: #238282; */
+  /* padding: 10px; */
+  width: 150px;
+}
+.cabeçalho .logo img{
+  width: 100%;
+  height: 50px;
+}
+.cabeçalho .icone-usuario{
+  background-color: #343473;
+  padding: 10px;
+  border-radius: 40px;
+}
 
 main.main-site {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  /* justify-content: center; */
   gap: 20px;
   width: 100%;
   max-width: 1100px;
-  background-color: #fff; /* Buscar cores de acordo com manual da marca depois  */
+  /* background-color: #fff; Buscar cores de acordo com manual da marca depois  */
   padding: 40px;
+}
+
+main.main-site .voltar-content{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+main.main-site .voltar-content .botao-voltar{
+  padding: 8px 16px;
+  color: #FFFFFF;
+  background-color: #0FB5B5;
+  border: 0;
   border-radius: 10px;
+}
+
+main.main-site .logo-mobile{
+  display: none;
+}
+
+main.main-site .card.card-login{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #F9F9F9;
+  padding: 20px;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.15);
+  width: 400px;
+}
+
+main.main-site .card.card-login h1{
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  color: #444444;
+}
+
+main.main-site .card.card-login .form-convidado{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+main.main-site .card.card-login .form-convidado .entrada-dados{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+main.main-site .card.card-login .form-convidado .entrada-dados label{
+  color: #777777;
+  font-weight: bold;
+  font-size: 0.7rem;
+  margin-bottom: 5px ;
+}
+
+main.main-site .card.card-login .form-convidado .entrada-dados input{
+  width: 100%;
+  border-radius: 10px;
+  padding: 8px 12px;
+  border: 1px solid #dfdfdf;
+}
+
+main.main-site .card.card-login .form-convidado .botao-registrar{
+  padding: 8px 16px;
+  color: #FFFFFF;
+  background-color: #0FB5B5;
+  border: 0;
+  border-radius: 10px;
+}
+
+main.main-site .card.card-login .divider{
+  padding: 8px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+main.main-site .card.card-login .divider p{
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  font-size: 0.7rem;
+  color: #999999;
+  padding: 8px 16px;
+}
+main.main-site .card.card-login .divider .linha{
+  width: 100%;
+  height: 1px;
+  background-color: #999999;
+}
+
+main.main-site .card.card-login .icones-redessocias{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+main.main-site .card.card-login .icones-redessocias img{
+  background-color: #e7e7e7;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+main.main-site .card.card-login .rodape{
+  font-size: 0.7rem;
+}
+
+main.main-site .card.card-login .rodape .link-cadastro{
+  text-decoration: none;
+}
+
+@media (max-width: 480px){
+  .cabeçalho{
+    display: none;
+  }
+  main.main-site .logo-mobile{
+    display: flex;
+    align-items: center;
+    /* background-color: #343473; */
+    padding: 20px;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 40px;
+  }
+  main.main-site .logo-mobile img{
+    width: 100%;
+  }
+  main.main-site .voltar-content{
+    padding: 20px;
+  }
+  main.main-site {
+    padding: 0;
+    padding-top: 20px;
+  }
+  main.main-site .card.card-login{
+    border-radius: 0px;
+  }
+  main.main-site .card.card-login .form-convidado{
+    width: 100%;
+  }
+  main.main-site .voltar-content .botao-voltar{
+    background-color: none;
+    color: #000000;
+  }
+  main.main-site .card.card-login{
+    width: 100%;
+  }
+
 }
