@@ -76,6 +76,11 @@
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.35);
 }
 
+.botao-adicionar-produtos{
+  
+  
+}
+
 .pesquisa-acoes{
   padding: 30px;
   width: 1008px;
@@ -90,7 +95,8 @@
 
 .container-produtos{
   display: flex;
-  width: 1008px;
+  justify-content: space-evenly;
+  width: 100%;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 12px;
