@@ -14,102 +14,8 @@
   <link rel="stylesheet" href="../../toaki-componentes-css/css/icones.css">
   <link rel="stylesheet" href="../../toaki-componentes-css/css/inputs.css">
   <link rel="stylesheet" href="../../toaki-componentes-css/css/navbar.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <style>
-    :root {
-    --raio-login: 30px;
-    --font-light: 300;
-    --font-Regular: 400;
-    --font-Medium: 500;
-    --font-SemiBold: 600;  
-    }
-    
-    .voltarPadding {
-      padding: 20px;
-    }
-    .containerCriarConta {
-    width: 100%;
-    max-width: 600px;              /* largura semelhante ao padrão do login */
-    margin: 5% auto;             /* centraliza vertical e horizontal */
-    padding: 24px;               /* respiro interno */
-    background: var(--cor-branco-translucido);
-    border-radius: 30px;         /* igual ao seu padrão */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.10);
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;                   /* espaço interno entre os elementos */
-    }
-
-    .containerCriarConta h2{
-      text-align: center;
-      font-size: 48px;
-      color: #000000ba;
-      font-family: "Montserrat", sans-serif;
-      font-weight: var(--font-SemiBold)
-    }
-
-    .containerCriarConta form {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      color: #000000ba;
-    }
-
-    .containerCriarConta .botaoCentralizado {
-      text-align: center;
-    }
-
-    .labelDesign {
-      display: flex;
-      align-items: center;
-      gap: 10px; 
-      width: 100%;
-    }
-
-    .linhaDesign {
-      flex: 1;                           
-      height: 1px;
-      background-color: var(--cor-borda-neutra);
-    }
-
-    .label-textoDesign {
-      white-space: nowrap;               
-      color: rgba(0, 0, 0, 0.7);
-      font-weight: 500;
-    }
-
-
-
-    @media (max-width: 1024px) {
-      .containerCriarConta {
-        max-width: 55%;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .containerCriarConta {
-        max-width: 80%;
-        padding: 18px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .containerCriarConta {
-        max-width: 92%;
-        padding: 15px;
-      }
-    }
-
-
-
-
-
-  </style>
- 
+  <link rel="stylesheet" href="../vendedor-tela-login/css/criarContaDesktop.css">
 </head>
-
 <body>
 
 <div class="navbar-tamanho">
@@ -173,15 +79,15 @@
     <!-- Login social -->
     <div class="social-login">
       <button type="button" class="btn-social btn-google">
-        <img src="" alt="Login com Google">
+        <img src="/telas/vendedor-tela-login/img/icons8-google-logo-96.svg" alt="Login com Google">
       </button>
 
       <button type="button" class="btn-social btn-facebook">
-        <img src="" alt="Login com Facebook">
+        <img src="/telas/vendedor-tela-login/img/icons8-facebook-novo-96.svg" alt="Login com Facebook">
       </button>
 
-      <button type="button" class="btn-social btn-X">
-        <img src="" alt="Login com X">
+      <button type="button" class="btn-social btn-twitter">
+        <img src="/telas/vendedor-tela-login/img/icon-X.svg " alt="Login com Twitter">
       </button>
     </div>
   </form>

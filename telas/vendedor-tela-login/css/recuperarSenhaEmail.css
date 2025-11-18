@@ -1,0 +1,131 @@
+
+
+    :root {
+    --raio-login: 30px;
+    --font-light: 300;
+    --font-Regular: 400;
+    --font-Medium: 500;
+    --font-SemiBold: 600;  
+    }
+
+  body {
+    background-color: var(--cor-fundo-primaria);
+  }
+
+  .navbar-tamanho{
+    width: 100%;
+  }
+
+
+.navbar-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--espacamento-xg);
+  width: 100%;
+  padding-top: var(--espacamento-regular);
+  padding-bottom: var(--espacamento-regular);
+  background-color: var(--cor-fundo-secundaria);
+  box-shadow: var(--sombra-media);
+  border-radius: var(--raio-grande);
+}
+
+.navbar-3-icones {
+  gap: var(--espacamento-ggg);
+}
+
+.navbar-desktop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--espacamento-m);
+  background-color: var(--cor-fundo-secundaria);
+  box-shadow: var(--sombra-media);
+  border-radius: var(--raio-grande);
+}
+
+.navbar-desktop-imagem {
+  width: 60px;
+  height: 60px;
+}
+
+.navbar-desktop-imagem img {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-desktop-secao-vazia {
+  flex-grow: 1;
+}
+
+.navbar-desktop-icones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--espacamento-gg);
+}
+
+.icone-tamanho-g {
+  width: 32px;
+  height: 32px;
+}
+
+  .voltarPadding {
+    padding: 20px;
+  }
+  
+  .containerSenhaEmail {
+  width: 100%;
+  max-width: 600px;              /* largura semelhante ao padrão do login */
+  margin: 5% auto;             /* centraliza vertical e horizontal */
+  padding: 24px;               /* respiro interno */
+  background: var(--cor-branco-translucido);
+  border-radius: 30px;         /* igual ao seu padrão */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.10);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;                   /* espaço interno entre os elementos */
+  }
+
+  .containerSenhaEmail h2{
+    text-align: center;
+    font-size: 48px;
+    color: #000000ba;
+    font-family: "Montserrat", sans-serif;
+    font-weight: var(--font-SemiBold)
+  }
+
+  .containerSenhaEmail form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: #000000ba;
+  }
+
+  .containerSenhaEmail .botaoCentralizado {
+    text-align: center;
+  }
+
+
+
+  @media (max-width: 1024px) {
+    .containerCriarConta {
+      max-width: 55%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .containerCriarConta {
+      max-width: 80%;
+      padding: 18px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .containerCriarConta {
+      max-width: 92%;
+      padding: 15px;
+    }
+  }
