@@ -77,14 +77,27 @@
 }
 
 .botao-adicionar-produtos{
+  margin-left: auto;
+  padding-right: 50px;
   
   
 }
 
 .pesquisa-acoes{
-  padding: 30px;
-  width: 1008px;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  width: 92%;
+}
 
+
+.custom-select-container{
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  width: 300px;
+  padding-left: 58px;
+  border-radius: 10px;
 }
 
 .entrada-container-filtro{
@@ -100,7 +113,7 @@
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 12px;
-  gap: 16px;
+  gap: 2px;
   
 
 }
