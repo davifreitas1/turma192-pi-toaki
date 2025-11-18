@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../toaki-componentes-css/css/global.css">
+    <link rel="stylesheet" href="../../toaki-componentes-css/css/botoes.css">
+    <link rel="stylesheet" href="../../toaki-componentes-css/css/cards.css">
+    <link rel="stylesheet" href="../../toaki-componentes-css/css/imagem.css">
+    <link rel="stylesheet" href="../../toaki-componentes-css/css/icones.css">
+    <link rel="stylesheet" href="../../toaki-componentes-css/css/inputs.css">
+    <link rel="stylesheet" href="../../toaki-componentes-css/css/navbar.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/exemplo.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Insira o nome da tela aqui</title>
+</head>
+
+<body>  
+    <div class="resolucao">
+        <div class="imagem-web">
+            <div class="conteudo">
+
+                <div class="navbar-desktop-espacamento">
+                    <nav class="navbar-desktop">
+                        <div class="navbar-desktop-imagem">
+                            <img src="../../toaki-componentes-css/image/logo-navbar.png" alt="">
+                        </div>
+
+                        <div class="navbar-desktop-secao-vazia"></div>
+
+                        <div class="navbar-desktop-icones">
+                            <svg class="icone-tamanho-m icone-sino icone-borda-preta" viewBox="0 0 24 24" fill="none">
+                                <path stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+
+                            <svg class="icone-tamanho-m icone-chat icone-borda-preta" viewBox="0 0 24 24" fill="none">
+                                <path stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+
+                            <svg class="icone-tamanho-m icone-usuario icone-borda-ciano" viewBox="0 0 24 24" fill="none">
+                                <path stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                    </nav>
+                </div>
+
+                <div>
+                    <div class="chat-container">
+
+                        <!-- base esquerda -->
+                        <aside class="chat-sidebar">                           
+                            <button class="botao-ciano-pequeno botao-geral-ciano">Voltar</button>
+                                <nav class="sidebar-menu">
+                                    <a href="#" class="menu-item">
+                                        <svg class="icone-tamanho-m icone-editar icone-borda-preta" viewBox="0 0 24 24" fill="none">
+                                            <path stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                        Editar Perfil
+                                    </a>
+
+                                    <a href="#" class="menu-item">
+                                        <svg class="icone-tamanho-m icone-documento icone-borda-preta" viewBox="0 0 24 24" fill="none">
+                                            <path stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                        Alterar Dados
+                                    </a>
+
+                                    <a href="#" class="menu-item ativo">
+                                        <svg class="icone-tamanho-m icone-telefone icone-borda-preta" viewBox="0 0 24 24" fill="none">
+                                            <path stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                        Ajuda e Suporte
+                                    </a>
+                                </nav>
+                        </aside>
+
+                        <!-- chat -->
+                        <section class="chat-area">
+
+                            <header class="chat-header">
+                                <div>
+                                    <svg class="icone-tamanho-g icone-usuario icone-borda-preta" viewBox="0 0 24 24" fill="none">
+                                        <path stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </div>
+
+                                <span class="titulo-chat">ChatBot</span>
+                            </header>
+
+                            <div class="chat-mensagens"></div>
+
+                            <div class="chat-input-area">
+                                <input type="text" placeholder="Digite sua mensagem..." class="chat-input">
+                                <svg class="icone-tamanho-g icone-enviar icone-borda-preta" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+
+                        </section>
+
+                    </div>
+                </div>
+
+            </div>
+        </div> 
+    </div>
+
+    <script src="./script/script.js"></script>
+</body>
+</html>

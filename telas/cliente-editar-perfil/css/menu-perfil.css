@@ -1,0 +1,267 @@
+.resolucao {
+    height: 100vh;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: var(--espacamento-gg);
+    padding: var(--espacamento-p);
+    justify-content: space-between;
+
+}
+
+.painel {
+    background-color: var(--cor-fundo-secundaria);
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    max-height: 696px;
+    padding: 12px;
+    border-radius: 20px;
+    flex-grow: 1;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.painel-2 {
+    flex-grow: 1;
+}
+
+.painel-3 {
+    width: 119px;
+}
+
+.painel-editar-perfil{
+    display: flex;
+    width: auto;
+    height: 329px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.acoes-editar-perfil {
+    display: flex;
+    flex-direction: column;
+    width: 425px;
+    height: 334px;
+    background-color: var(--cor-fundo-secundaria);
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.35);
+    justify-content: center;
+    padding: 50px;
+}
+
+.centralizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.espacamento-itens {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.espacamento-itens .item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 12px 0;
+}
+
+.icone-seta {
+    display: flex;
+    align-items: center;
+    margin-left: 95px;
+}
+
+.icone-seta1 {
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+}
+
+.icone-seta2 {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-texto-primaria);
+    font-weight: var(--font-SemiBold);
+}
+
+.centralizar-sair {
+    display: flex;
+    margin-top: 36px;
+    justify-content: center;
+}
+
+.ajustar-botao {
+    display: flex;
+    width: 110px;
+    height: 45px;
+}
+
+.centralizar-perfil {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: var(--espacamento-regular);
+}
+
+.centralizar-perfil p {
+    font-size: 24px;
+    font-weight: var(--font-Medium);
+}
+
+#card-perfil-custom {
+    width: 280px;
+    height: 280px;
+    border-radius: 100%;
+}
+
+#icone-perfil-grande {
+    width: 100%;
+    height: 100%;
+}
+
+.container-funcionalidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao-sair {
+    color: var( --cor-feedback-negativo);
+}
+
+@media (min-width: 721px) {
+    .layout-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 720px) {
+    .navbar-desktop {
+        display: none;
+    }
+
+    .painel {
+        display: none;
+    }
+
+    .resolucao{
+        display: none;
+    }
+
+    .container-funcionalidades {
+        display: none;
+    }
+
+    .acoes-editar-perfil{
+        display: none;
+    }
+
+    .layout-mobile {
+        background: var(--cor-fundo-secundaria);
+        width: 100%;
+        height: 667px;
+        padding: var(--espacamento-g);
+    }
+
+    .inicio {
+        display: flex;
+        height: 20%;
+        padding-bottom: 10px;
+    }
+
+    .espacamento-texto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: var(--font-Medium);  
+        flex-direction: column;     
+        gap: 10px;
+    }
+
+     .espacamento-icone {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        flex-direction: column;
+        gap: 10px;
+     }
+
+     .inicio1 {
+        flex-grow: 1;
+        width: 100%;
+        height: 20%;
+     }
+
+     .icone-usuario-texto { 
+        display:flex;                
+        gap: 10px; 
+     }
+
+     .centralizar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        margin-top: 40px;
+        
+    }   
+
+    .espacamento-itens {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .espacamento-itens .item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 12px 0;
+    }
+
+    .icone-seta {
+        display: flex;
+        align-items: center;
+        margin-left: 116px;
+    }
+
+    .icone-seta1 {
+        display: flex;
+        align-items: center;
+        margin-left: 100px;
+    }
+
+    .icone-seta2 {
+        display: flex;
+        align-items: center;
+        margin-left: 80px;
+    }
+
+    .botao-sair {
+        color: var( --cor-feedback-negativo);
+    }
+
+    .centralizar-sair {
+        display: flex;
+        margin-top: 140px;
+        justify-content: center;
+    }
+}
+  
