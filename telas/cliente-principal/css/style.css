@@ -60,7 +60,7 @@
   justify-content: flex-end;
   align-items: center;
   padding-right: var(--espacamento-m);
-  top: 230px;
+  top: 40%;
 }
 
 .centralizar button{
@@ -92,7 +92,7 @@
     align-items: center;
     justify-content: flex-start;
     padding-left: var(--espacamento-m);
-    top:60px;
+    top: 7%;
 }
 
 .icone-user{
@@ -123,7 +123,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    top: 275px;
+    top: 55%;
   }
 
   .iconkm-container{
@@ -134,7 +134,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   padding: var(--espacamento-m);
-  top: 60px;
+  top: 8%;
   }
 
 .iconkm-container button{
