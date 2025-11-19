@@ -1,3 +1,4 @@
+/*desktop*/
 .resolucao {
     height: 100vh;
 }
@@ -124,4 +125,70 @@
 .chat-input {
     flex: 1;
     border: none;
+}
+
+/*--------------------------------------------*/
+
+/*tela até 1400px*/
+@media (max-width: 1400px) {
+    .painel {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+/*tela até 1024px*/
+@media (max-width: 1024px) {
+
+    .painel {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .painel-sidebar {
+        width: 200px;
+    }
+
+    .menu-item {
+        font-size: 14px;
+    }
+}
+
+/*celulara até 768px*/
+@media (max-width: 768px) {
+
+    .painel {
+        flex-direction: column;
+        margin: 0;
+        height: auto;
+        max-height: none;
+        border-radius: 0;
+    }
+
+    .painel-sidebar {
+        width: 100%;
+        border-right: 0;
+        border-bottom: 1px solid var(--cor-borda-neutra);
+        padding-bottom: 20px;
+    }
+
+    .painel-controle {
+        padding: 10px 0;
+        border-right: none;
+    }
+
+    .menu-sidebar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .menu-item {
+        font-size: 14px;
+    }
+
+    .painel-forms {
+        padding: 20px;
+    }
 }
