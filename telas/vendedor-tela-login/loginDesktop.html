@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../toaki-componentes-css/css/global.css">
+  <link rel="stylesheet" href="../../toaki-componentes-css/css/botoes.css">
+  <link rel="stylesheet" href="../../toaki-componentes-css/css/cards.css">
+  <link rel="stylesheet" href="../../toaki-componentes-css/css/imagem.css">
+  <link rel="stylesheet" href="../../toaki-componentes-css/css/icones.css">
+  <link rel="stylesheet" href="../../toaki-componentes-css/css/inputs.css">
+  <link rel="stylesheet" href="../../toaki-componentes-css/css/navbar.css">
+  <link rel="stylesheet" href="../vendedor-tela-login/css//loginDesktop.css">
+</head>
+
+<body>
+
+<div class="navbar-tamanho">
+<nav class="navbar-desktop">
+<div class="navbar-desktop-imagem">
+<img src="../../toaki-componentes-css/image/logo-navbar.png" alt="">
+</div>
+
+<div class="navbar-desktop-secao-vazia">
+</div>
+
+<div class="navbar-desktop-icones">
+<svg class="icone-tamanho-g icone-usuario icone-borda-preta" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+
+</nav>
+</div>
+
+
+<div class="containerLogin">
+  <form id="telaLogin" class="ativo">
+    <h2>Entrar</h2>
+
+    <div class="rotulo-entrada">
+      <label class="rotulo-desktop" for="email">E-mail</label>
+      <input class="entrada-desktop" type="text" id="email" placeholder="Ex: joaosilva@exemplo.com.br">
+    </div>
+
+    <div class="rotulo-entrada">
+      <label class="rotulo-desktop" for="senha">Senha</label>
+      <input class="entrada-desktop" type="password" id="senha" placeholder="Ex: MinhaSenhaForte123!">
+    </div>
+
+    <div class="checkbox">
+      <div class="lembrar">
+        <input type="checkbox" id="remember" name="remember">
+        <label for="remember">Lembrar senha</label>
+      </div>
+      <a href="#" class="link-esqueci">Esqueci minha senha</a>
+    </div>
+
+    <div class="botaoCentralizado">
+        <button class="botao-grande botao-geral-ciano" type="submit">Entrar</button>
+    </div>
+  
+
+    <div class="labelDesign">
+      <div class="linhaDesign"></div>
+      <div class="label-textoDesign">Entrar com</div>
+      <div class="linhaDesign"></div>
+    </div>
+
+    <!-- Login social -->
+    <div class="social-login">
+      <button type="button" class="btn-social btn-google">
+        <img src="/telas/vendedor-tela-login/img/icons8-google-logo-96.svg" alt="Login com Google">
+      </button>
+
+      <button type="button" class="btn-social btn-facebook">
+        <img src="/telas/vendedor-tela-login/img/icons8-facebook-novo-96.svg" alt="Login com Facebook">
+      </button>
+
+      <button type="button" class="btn-social btn-twitter">
+        <img src="/telas/vendedor-tela-login/img/icon-X.svg " alt="Login com Twitter">
+      </button>
+    </div>
+
+    <div class="cadastroVendedor">
+      <p>Não tem conta? <a href="#">Cadastre-se</a></p>
+    </div>
+  </form>
+</div>
+
+
+
+
+<script src="./js/script.js"></script>
+</body>
+</html>
